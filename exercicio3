@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int prato, sobremesa, bebida;
+
+    printf("Menu:\n");
+    printf("Prato: 1 - Vegetariano, 2 - Peixe, 3 - Frango, 4 - Carne\n");
+    printf("Sobremesa: 1 - Abacaxi, 2 - Sorvete diet, 3 - Mouse diet, 4 - Mouse chocolate\n");
+    printf("Bebida: 1 - Cha, 2 - Suco de laranja, 3 - Suco de melao, 4 - Refrigerante diet\n");
+
+    printf("Escolha o prato (1-4): ");
+    scanf("%d", &prato);
+    printf("Escolha a sobremesa (1-4): ");
+    scanf("%d", &sobremesa);
+    printf("Escolha a bebida (1-4): ");
+    scanf("%d", &bebida);
+
+    switch (prato) {
+        
