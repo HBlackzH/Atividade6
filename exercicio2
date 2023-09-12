@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    int codigo, quantidade;
+    float valorTotal;
+
+    printf("Cardapio:\n");
+    printf("100 - Cachorro Quente - R$ 10.10\n");
+    printf("101 - Bauru Simples - R$ 8.30\n");
+    printf("102 - Bauru com Ovo - R$ 8.50\n");
+    printf("103 - Hamburguer - R$ 12.50\n");
+    printf("104 - cheeseburguer - R$ 13.25\n");
+
+    printf("Digite o codigo do item: ");
+    scanf("%d", &codigo);
+    printf("Digite a quantidade: ");
+    scanf("%d", &quantidade);
+
+    switch (codigo){
+        case 100:
+            valorTotal = 10.10 * quantidade;
+            break;
+        case 101:
+            valorTotal = 8.30 * quantidade;
+            break;
+        case 102:
+            valorTotal = 8.50 * quantidade;
+            break;
+        case 103:
+            valorTotal = 12.50 * quantidade;
+            break;
+        case 104:
+            valorTotal = 13.25 * quantidade;
+            break;       
+        default:
+            printf("Codigo de item invalido.\n");
+    }
+
+    printf("Valor total a pagar: R$ %.2f\n", valorTotal);
+
+    return 0;
+}
